@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: crud_projeto
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: agenda
