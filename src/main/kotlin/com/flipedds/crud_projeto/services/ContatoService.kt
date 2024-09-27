@@ -9,7 +9,9 @@ import java.util.*
 
 @Service
 class ContatoService(val contatoRepository: ContatoRepository) {
-    fun criarContato(scanner: Scanner) {
+    fun criarContato() {
+        val scanner = Scanner(System.`in`)
+
         println("Digite o nome:")
         val nome = scanner.nextLine()
         println("Digite o sobrenome:")
@@ -38,7 +40,9 @@ class ContatoService(val contatoRepository: ContatoRepository) {
         contatos.forEach { println(it) }
     }
 
-    fun buscarContatoPorId(scanner: Scanner) {
+    fun buscarContatoPorId() {
+        val scanner = Scanner(System.`in`)
+
         println("Digite o ID do contato:")
         val id = scanner.nextLine()
 
@@ -51,7 +55,9 @@ class ContatoService(val contatoRepository: ContatoRepository) {
         println("Contato encontrado: $contato")
     }
 
-    fun atualizarContato(scanner: Scanner) {
+    fun atualizarContato() {
+        val scanner = Scanner(System.`in`)
+
         println("Digite o ID do contato a ser atualizado:")
         val id = scanner.nextLine()
 
@@ -88,7 +94,9 @@ class ContatoService(val contatoRepository: ContatoRepository) {
 
     }
 
-    fun deletarContato(scanner: Scanner) {
+    fun deletarContato() {
+        val scanner = Scanner(System.`in`)
+
         println("Digite o ID do contato a ser deletado:")
         val id = scanner.nextLine()
 
